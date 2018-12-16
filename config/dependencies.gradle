@@ -1,0 +1,78 @@
+ext {
+    //Android libraries
+    appCompat_version = '28.0.0'
+    constraintLayout_version = '1.1.2'
+    archComponents_version = '1.1.1'
+    glide_version = '4.8.0'
+
+    //Third party libraries
+    kotlin_coroutines_version = '0.22.1'
+    dagger_version = '2.16'
+    retrofit_version = '2.5.0'
+    okhttp_logging_interceptor_version = '3.8.1'
+    rxjava2_version = '2.2.4'
+    rxandroid_version = '2.1.0'
+
+    //Unit Testing
+    robolectric_version = '1.0.0'
+    junit_version = '4.12'
+    mockito_version = '1.10.19'
+
+    //Acceptance Testing
+    runner_version = '1.0.2'
+    espresso_version = '3.0.2'
+
+    appDependencies = [
+            "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
+
+            "com.android.support:appcompat-v7:$appCompat_version",
+            "com.android.support:cardview-v7:$appCompat_version",
+            "com.android.support:recyclerview-v7:$appCompat_version",
+            "com.android.support:design:$appCompat_version",
+            "com.android.support.constraint:constraint-layout:$constraintLayout_version",
+
+            // Android Arch lifecyle: LiveData & ViewModel
+            "android.arch.lifecycle:extensions:$archComponents_version",
+
+            // Image loader lib
+            "com.github.bumptech.glide:glide:$glide_version",
+
+            // Dependencies injection
+            "com.google.dagger:dagger:$dagger_version",
+            "com.google.dagger:dagger-android:$dagger_version",
+            "com.google.dagger:dagger-android-support:$dagger_version",
+
+            // RxJava
+            "io.reactivex.rxjava2:rxandroid:$rxandroid_version",
+            "io.reactivex.rxjava2:rxjava:$rxjava2_version",
+
+            // Networking
+            "com.squareup.retrofit2:retrofit:$retrofit_version",
+            "com.squareup.retrofit2:converter-gson:$retrofit_version",
+            "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version",
+            "com.squareup.okhttp3:logging-interceptor:$okhttp_logging_interceptor_version",
+    ]
+
+    appKapt = [
+            "android.arch.lifecycle:compiler:$archComponents_version",
+            "com.google.dagger:dagger-compiler:$dagger_version",
+            "com.google.dagger:dagger-android-processor:$dagger_version",
+            "com.github.bumptech.glide:compiler:$glide_version"
+    ]
+
+    unitTesting = [
+            "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+            "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version",
+            "androidx.test:core:$robolectric_version",
+            "junit:junit:$junit_version",
+            "org.mockito:mockito-core:$mockito_version",
+    ]
+
+    acceptanceTesting = [
+            "com.android.support.test:runner:$runner_version",
+            "com.android.support.test:rules:$runner_version",
+            "com.android.support.test.espresso:espresso-core:$espresso_version",
+            "com.android.support.test.espresso:espresso-intents:$espresso_version",
+            "com.android.support:support-annotations:$appCompat_version",
+    ]
+}

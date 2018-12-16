@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TheNowPlayingMovies</string>
+
+    <string name="tmdb_apiKey">96aaa85a10353e489ec031d7471c361d</string>
+    <string name="api_base_url">https://api.themoviedb.org/3/</string>
+    <string name="loading_configuration">Loading configuration…</string>
+
+    <string name="error_loading_config_fail">Can\'t load configuration!</string>
+    <string name="action_finish">Finish</string>
+    <string name="now_playing">Now Playing</string>
+</resources>
